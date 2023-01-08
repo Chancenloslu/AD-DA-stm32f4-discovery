@@ -1,0 +1,24 @@
+--cpu=Cortex-M4 --fpu=SoftVFP
+".\adc_triplemodeinterleaved\startup_stm32f429_439xx.o"
+".\adc_triplemodeinterleaved\stm32f429i_discovery.o"
+".\adc_triplemodeinterleaved\stm32f429i_discovery_lcd.o"
+".\adc_triplemodeinterleaved\stm32f429i_discovery_sdram.o"
+".\adc_triplemodeinterleaved\misc.o"
+".\adc_triplemodeinterleaved\stm32f4xx_adc.o"
+".\adc_triplemodeinterleaved\stm32f4xx_dma.o"
+".\adc_triplemodeinterleaved\stm32f4xx_dma2d.o"
+".\adc_triplemodeinterleaved\stm32f4xx_fmc.o"
+".\adc_triplemodeinterleaved\stm32f4xx_gpio.o"
+".\adc_triplemodeinterleaved\stm32f4xx_ltdc.o"
+".\adc_triplemodeinterleaved\stm32f4xx_rcc.o"
+".\adc_triplemodeinterleaved\stm32f4xx_spi.o"
+".\adc_triplemodeinterleaved\stm32f4xx_exti.o"
+".\adc_triplemodeinterleaved\stm32f4xx_i2c.o"
+".\adc_triplemodeinterleaved\stm32f4xx_syscfg.o"
+".\adc_triplemodeinterleaved\main.o"
+".\adc_triplemodeinterleaved\stm32f4xx_it.o"
+".\adc_triplemodeinterleaved\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter ".\ADC_TripleModeInterleaved\ADC_TripleModeInterleaved.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ADC_TripleModeInterleaved.map" -o .\ADC_TripleModeInterleaved\ADC_TripleModeInterleaved.axf

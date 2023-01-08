@@ -1,0 +1,24 @@
+--cpu=Cortex-M4 --fpu=SoftVFP
+".\ltdc_colorkeying\startup_stm32f429_439xx.o"
+".\ltdc_colorkeying\stm32f429i_discovery.o"
+".\ltdc_colorkeying\stm32f429i_discovery_lcd.o"
+".\ltdc_colorkeying\stm32f429i_discovery_sdram.o"
+".\ltdc_colorkeying\misc.o"
+".\ltdc_colorkeying\stm32f4xx_adc.o"
+".\ltdc_colorkeying\stm32f4xx_dma.o"
+".\ltdc_colorkeying\stm32f4xx_dma2d.o"
+".\ltdc_colorkeying\stm32f4xx_exti.o"
+".\ltdc_colorkeying\stm32f4xx_fmc.o"
+".\ltdc_colorkeying\stm32f4xx_gpio.o"
+".\ltdc_colorkeying\stm32f4xx_ltdc.o"
+".\ltdc_colorkeying\stm32f4xx_rcc.o"
+".\ltdc_colorkeying\stm32f4xx_spi.o"
+".\ltdc_colorkeying\stm32f4xx_syscfg.o"
+".\ltdc_colorkeying\stm32f4xx_i2c.o"
+".\ltdc_colorkeying\main.o"
+".\ltdc_colorkeying\stm32f4xx_it.o"
+".\ltdc_colorkeying\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter ".\LTDC_ColorKeying\LTDC_ColorKeying.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LTDC_ColorKeying.map" -o .\LTDC_ColorKeying\LTDC_ColorKeying.axf

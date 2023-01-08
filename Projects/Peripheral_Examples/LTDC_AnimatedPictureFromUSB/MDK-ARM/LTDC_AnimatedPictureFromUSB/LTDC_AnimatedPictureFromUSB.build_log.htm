@@ -1,0 +1,191 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ÂµVision V5.37.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: chaoran lu, TU Darmstadt, LIC=8VRJ7-ER5U5-FWZ2N-YWVFN-ZXPR8-QHUF9
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.37.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.18
+Assembler:       Armasm.exe V6.18
+Linker/Locator:  ArmLink.exe V6.18
+Library Manager: ArmAr.exe V6.18
+Hex Converter:   FromElf.exe V6.18
+CPU DLL:         SARMCM3.DLL V5.37.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.56.1.0
+ 
+<h2>Project:</h2>
+E:\en.stsw-stm32138\STM32F429I-Discovery_FW_V1.0.3\Projects\Peripheral_Examples\LTDC_AnimatedPictureFromUSB\MDK-ARM\LTDC_AnimatedPictureFromUSB.uvproj
+Project File Date:  08/28/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.18', folder: 'D:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'LTDC_AnimatedPictureFromUSB'
+compiling usb_bsp.c...
+compiling stm32fxxx_it.c...
+compiling main.c...
+compiling fattime.c...
+../usbh_usr.c(205): warning: passing 'char[12]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+    LCD_LOG_SetHeader("USB HS Host");
+                      ^~~~~~~~~~~~~
+./../../../../Utilities/Common\lcd_log.h(136): note: passing argument to parameter 'Title' here
+void LCD_LOG_SetHeader(uint8_t *Title);
+                                ^
+../usbh_usr.c(210): warning: passing 'char[29]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+    LCD_LOG_SetFooter ("     USB Host Library v2.1.0" );
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./../../../../Utilities/Common\lcd_log.h(137): note: passing argument to parameter 'Status' here
+void LCD_LOG_SetFooter(uint8_t *Status);
+                                ^
+../usbh_usr.c(250): warning: passing 'char[39]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+  LCD_DisplayStringLine( LCD_PIXEL_HEIGHT - 42, "                                      ");
+                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./../../../../Utilities/STM32F429I-Discovery\stm32f429i_discovery_lcd.h(280): note: passing argument to parameter 'ptr' here
+void     LCD_DisplayStringLine(uint16_t Line, uint8_t *ptr);
+                                                       ^
+../usbh_usr.c(251): warning: passing 'char[39]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+  LCD_DisplayStringLine( LCD_PIXEL_HEIGHT - 30, "                                      ");  
+                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./../../../../Utilities/STM32F429I-Discovery\stm32f429i_discovery_lcd.h(280): note: passing argument to parameter 'ptr' here
+void     LCD_DisplayStringLine(uint16_t Line, uint8_t *ptr);
+                                                       ^
+../usbh_usr.c(394): warning: passing 'char[32]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+  LCD_DisplayStringLine( LCD_LINE_15, "To see the root content of the " );
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./../../../../Utilities/STM32F429I-Discovery\stm32f429i_discovery_lcd.h(280): note: passing argument to parameter 'ptr' here
+void     LCD_DisplayStringLine(uint16_t Line, uint8_t *ptr);
+                                                       ^
+../usbh_usr.c(395): warning: passing 'char[33]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+  LCD_DisplayStringLine( LCD_LINE_16, "disk:   Press Key...            ");
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./../../../../Utilities/STM32F429I-Discovery\stm32f429i_discovery_lcd.h(280): note: passing argument to parameter 'ptr' here
+void     LCD_DisplayStringLine(uint16_t Line, uint8_t *ptr);
+                                                       ^
+../usbh_usr.c(546): warning: passing 'char[37]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+    LCD_DisplayStringLine(LCD_LINE_15,"To start Image slide show           ");
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./../../../../Utilities/STM32F429I-Discovery\stm32f429i_discovery_lcd.h(280): note: passing argument to parameter 'ptr' here
+void     LCD_DisplayStringLine(uint16_t Line, uint8_t *ptr);
+                                                       ^
+../usbh_usr.c(547): warning: passing 'char[37]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+    LCD_DisplayStringLine(LCD_LINE_16,"Press Key                           "); 
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./../../../../Utilities/STM32F429I-Discovery\stm32f429i_discovery_lcd.h(280): note: passing argument to parameter 'ptr' here
+void     LCD_DisplayStringLine(uint16_t Line, uint8_t *ptr);
+                                                       ^
+../usbh_usr.c(616): warning: passing 'char[32]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+        LCD_DisplayStringLine (LCD_LINE_15, "Press Key to continue...       ");
+                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./../../../../Utilities/STM32F429I-Discovery\stm32f429i_discovery_lcd.h(280): note: passing argument to parameter 'ptr' here
+void     LCD_DisplayStringLine(uint16_t Line, uint8_t *ptr);
+                                                       ^
+../usbh_usr.c(617): warning: passing 'char[32]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+        LCD_DisplayStringLine (LCD_LINE_16, "                               ");
+                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./../../../../Utilities/STM32F429I-Discovery\stm32f429i_discovery_lcd.h(280): note: passing argument to parameter 'ptr' here
+void     LCD_DisplayStringLine(uint16_t Line, uint8_t *ptr);
+                                                       ^
+../usbh_usr.c(640): warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+        LCD_UsrLog((void *)tmp);
+                   ^       ~~~
+./../../../../Utilities/Common\lcd_log.h(113): note: expanded from macro 'LCD_UsrLog'
+                            printf(__VA_ARGS__);\
+                                   ^~~~~~~~~~~
+../usbh_usr.c(640): note: treat the string as an argument to avoid this
+        LCD_UsrLog((void *)tmp);
+                   ^
+                   "%s", 
+./../../../../Utilities/Common\lcd_log.h(113): note: expanded from macro 'LCD_UsrLog'
+                            printf(__VA_ARGS__);\
+                                   ^
+../usbh_usr.c(645): warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+        LCD_DbgLog((void *)tmp);
+                   ^       ~~~
+./../../../../Utilities/Common\lcd_log.h(117): note: expanded from macro 'LCD_DbgLog'
+                            printf(__VA_ARGS__);\
+                                   ^~~~~~~~~~~
+../usbh_usr.c(645): note: treat the string as an argument to avoid this
+        LCD_DbgLog((void *)tmp);
+                   ^
+                   "%s", 
+./../../../../Utilities/Common\lcd_log.h(117): note: expanded from macro 'LCD_DbgLog'
+                            printf(__VA_ARGS__);\
+                                   ^
+../usbh_usr.c(700): warning: passing 'char[12]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+  LCD_LOG_SetHeader("USB HS Host");
+                    ^~~~~~~~~~~~~
+./../../../../Utilities/Common\lcd_log.h(136): note: passing argument to parameter 'Title' here
+void LCD_LOG_SetHeader(uint8_t *Title);
+                                ^
+../usbh_usr.c(704): warning: passing 'char[29]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+  LCD_LOG_SetFooter ("     USB Host Library v2.1.0" );
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./../../../../Utilities/Common\lcd_log.h(137): note: passing argument to parameter 'Status' here
+void LCD_LOG_SetFooter(uint8_t *Status);
+                                ^
+14 warnings generated.
+compiling usbh_usr.c...
+compiling lcd_log.c...
+compiling stm32f429i_discovery.c...
+compiling stm32f429i_discovery_sdram.c...
+compiling misc.c...
+compiling stm32f4xx_dma2d.c...
+compiling stm32f4xx_dma.c...
+compiling ff.c...
+compiling stm32f4xx_exti.c...
+compiling stm32f429i_discovery_lcd.c...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_fmc.c...
+compiling stm32f4xx_i2c.c...
+compiling stm32f4xx_syscfg.c...
+compiling stm32f4xx_ltdc.c...
+compiling stm32f4xx_rcc.c...
+assembling startup_stm32f429_439xx.s...
+../system_stm32f4xx.c(411): warning: while loop has empty body [-Wempty-body]
+    while ((RCC->CFGR & (uint32_t)RCC_CFGR_SWS ) != RCC_CFGR_SWS_PLL);
+                                                                     ^
+../system_stm32f4xx.c(411): note: put the semicolon on a separate line to silence this warning
+1 warning generated.
+compiling system_stm32f4xx.c...
+compiling stm32f4xx_spi.c...
+compiling usbh_msc_bot.c...
+compiling stm32f4xx_tim.c...
+compiling usbh_msc_core.c...
+compiling usbh_msc_fatfs.c...
+compiling usbh_msc_scsi.c...
+compiling usbh_core.c...
+compiling usbh_hcs.c...
+compiling usbh_ioreq.c...
+compiling usb_hcd.c...
+compiling usbh_stdreq.c...
+../../../../Libraries/STM32_USB_OTG_Driver/src/usb_core.c(183): warning: '__packed__' attribute ignored when parsing type [-Wignored-attributes]
+      USB_OTG_WRITE_REG32( fifo, *((__packed uint32_t *)src) );
+                                    ^~~~~~~~
+./..\usb_conf.h(209): note: expanded from macro '__packed'
+  #define __packed    __attribute__ ((__packed__))
+                                      ^~~~~~~~~~
+./../../../../Libraries/STM32_USB_OTG_Driver/inc/usb_defines.h(224): note: expanded from macro 'USB_OTG_WRITE_REG32'
+#define USB_OTG_WRITE_REG32(reg,value) (*(__IO uint32_t *)reg = value)
+                                                                ^~~~~
+../../../../Libraries/STM32_USB_OTG_Driver/src/usb_core.c(208): warning: '__packed__' attribute ignored when parsing type [-Wignored-attributes]
+    *(__packed uint32_t *)dest = USB_OTG_READ_REG32(fifo);
+      ^~~~~~~~
+./..\usb_conf.h(209): note: expanded from macro '__packed'
+  #define __packed    __attribute__ ((__packed__))
+                                      ^~~~~~~~~~
+2 warnings generated.
+compiling usb_core.c...
+compiling usb_hcd_int.c...
+linking...
+Program Size: Code=36728 RO-data=10316 RW-data=156 ZI-data=5948  
+".\LTDC_AnimatedPictureFromUSB\LTDC_AnimatedPictureFromUSB.axf" - 0 Error(s), 17 Warning(s).
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>

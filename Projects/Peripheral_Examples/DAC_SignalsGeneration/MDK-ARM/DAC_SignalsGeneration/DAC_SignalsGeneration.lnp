@@ -1,0 +1,26 @@
+--cpu=Cortex-M4 --fpu=SoftVFP
+".\dac_signalsgeneration\startup_stm32f429_439xx.o"
+".\dac_signalsgeneration\stm32f429i_discovery.o"
+".\dac_signalsgeneration\stm32f429i_discovery_lcd.o"
+".\dac_signalsgeneration\misc.o"
+".\dac_signalsgeneration\stm32f4xx_dac.o"
+".\dac_signalsgeneration\stm32f4xx_dma.o"
+".\dac_signalsgeneration\stm32f4xx_dma2d.o"
+".\dac_signalsgeneration\stm32f4xx_exti.o"
+".\dac_signalsgeneration\stm32f4xx_gpio.o"
+".\dac_signalsgeneration\stm32f4xx_rcc.o"
+".\dac_signalsgeneration\stm32f4xx_spi.o"
+".\dac_signalsgeneration\stm32f4xx_syscfg.o"
+".\dac_signalsgeneration\stm32f4xx_tim.o"
+".\dac_signalsgeneration\stm32f4xx_i2c.o"
+".\dac_signalsgeneration\stm32f4xx_adc.o"
+".\dac_signalsgeneration\stm32f4xx_ltdc.o"
+".\dac_signalsgeneration\stm32f429i_discovery_sdram.o"
+".\dac_signalsgeneration\stm32f4xx_fmc.o"
+".\dac_signalsgeneration\main.o"
+".\dac_signalsgeneration\stm32f4xx_it.o"
+".\dac_signalsgeneration\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter ".\DAC_SignalsGeneration\DAC_SignalsGeneration.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DAC_SignalsGeneration.map" -o .\DAC_SignalsGeneration\DAC_SignalsGeneration.axf
