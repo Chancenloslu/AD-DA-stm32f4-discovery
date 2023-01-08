@@ -51,5 +51,7 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-/EWARM
-/TrueSTUDIO
+/Projects/Demonstration
+/Projects/FW_upgrade
+/Projects/Master_Workspace
+/Projects/Peripheral_Examples
