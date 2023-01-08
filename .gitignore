@@ -51,7 +51,7 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-/Projects/Demonstration
-/Projects/FW_upgrade
-/Projects/Master_Workspace
-/Projects/Peripheral_Examples
+Projects/Demonstration
+Projects/FW_upgrade
+Projects/Master_Workspace
+Projects/Peripheral_Examples
